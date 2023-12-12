@@ -10,10 +10,9 @@ public class Main {
     FileInputStream studentFile = null;
     ArrayList<Student> students = new ArrayList<Student>();
     try {
-      studentFile = new FileInputStream(
-          "/Users/leedavis/Documents/GitHub/insertionsortjfasdf-akl/Sttudent and University/StudentFile.txt");
+      studentFile = new FileInputStream("resources/StudentFile.txt");
     } catch (IOException e) {
-      System.out.println("That's not a file silly");
+      System.out.println("That's not a file silly lee!");
     }
 
     // read in all the students
@@ -43,7 +42,7 @@ public class Main {
     FileInputStream schoolFile = null;
     ArrayList<University> schools = new ArrayList<University>();
     try {
-      schoolFile = new FileInputStream("C:\\Users\\story\\JavaFolder\\Sttudent and University\\Universities9.txt");
+      schoolFile = new FileInputStream("resources/Universities9.txt");
     } catch (IOException e) {
       System.out.println("That's not a file silly");
     }
@@ -76,7 +75,7 @@ public class Main {
 
     // Try to open file
     try {
-      fileStream = new FileOutputStream("C:\\Users\\story\\JavaFolder\\Sttudent and University\\Output.txt");
+      fileStream = new FileOutputStream("resources/Output.txt");
     } catch (IOException e) {
       System.out.println("jfa;l fk not a FILE silly");
     }
