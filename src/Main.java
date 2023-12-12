@@ -92,8 +92,9 @@ public class Main {
     // TODO
     int index = 0;
     for (int x = 0; x < schools.size(); x++) {
+      University school = schools.get(x);
       for (int y = 0; y < students.size(); y++) {
-        if (students.get(y).getUniversityName().equals(schools.get(x).getName()))
+        if (students.get(y).getUniversityName().equals(school.getName()))
           // failed insertion sort follows
           for (int z = 0; z < schoolLists[x].size(); z++) {
             // if students.get(y) comes before schoolLists[x].get(z)
